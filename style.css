@@ -1,0 +1,298 @@
+/* =========================
+   DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5fa;
+    color: #5a3547;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    text-align: center;
+    background-color: #ffb6d5;
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 30px;
+
+    background-color: white;
+    border: 3px solid #ffc5dc;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    box-shadow: 7px 7px 0 #f6b0ce;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 5px solid #ffb6d5;
+}
+
+.profile h2 {
+    color: #e45b96;
+    margin-bottom: 15px;
+}
+
+.profile p {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 30px;
+
+    background-color: white;
+    border: 3px solid #ffc5dc;
+    border-radius: 25px;
+
+    box-shadow: 7px 7px 0 #f6b0ce;
+}
+
+.card h2 {
+    color: #e45b96;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   LIST
+========================= */
+
+.card ul {
+    padding-left: 25px;
+}
+
+.card li {
+    margin: 8px 0;
+}
+
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #f27caf;
+    color: white;
+
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+
+    padding: 12px 25px;
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #df4f8c;
+    transform: translateY(-3px);
+}
+
+.button-tema {
+    margin-top: 15px;
+    background-color: white;
+    color: #e45b96;
+}
+
+.button-tema:hover {
+    background-color: #fff0f6;
+}
+
+.tombol-grup {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pesan-sapa {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #e45b96;
+    min-height: 24px;
+}
+
+/* Efek ketik */
+.ketik {
+    min-height: 28px;
+    font-weight: bold;
+    color: #e45b96;
+    border-right: 3px solid #e45b96;
+    display: inline-block;
+    padding-right: 5px;
+    margin-bottom: 12px;
+    animation: kedip 0.8s infinite;
+}
+
+@keyframes kedip {
+    0%, 100% { border-color: #e45b96; }
+    50% { border-color: transparent; }
+}
+
+#salam {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#jam {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* =========================
+   SOSMED
+========================= */
+
+.sosmed {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 10px 0 30px;
+}
+.sosmed ul {
+    list-style: none;
+}
+.sosmed a {
+    
+    text-align: center; 
+    font-size: 15px;
+    color: palevioletred;
+    text-decoration: none;
+
+}
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    background-color: #ff9fc5;
+    color: white;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+
+        margin: 20px;
+    }
+
+    .card {
+        margin: 20px;
+    }
+
+    .avatar {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background-color: #2b1a23;
+    color: #ffd6e7;
+}
+
+body.dark-mode header {
+    background-color: #5c2a42;
+}
+
+body.dark-mode .profile,
+body.dark-mode .card {
+    background-color: #3d2432;
+    border-color: #7a4a63;
+    box-shadow: 7px 7px 0 #1e1017;
+}
+
+body.dark-mode .profile h2,
+body.dark-mode .card h2,
+body.dark-mode .ketik,
+body.dark-mode .pesan-sapa {
+    color: #ff9fc5;
+}
+
+body.dark-mode .ketik {
+    border-color: #ff9fc5;
+}
+
+body.dark-mode .sosmed a {
+    color: #ff9fc5;
+}
+
+body.dark-mode footer {
+    background-color: #5c2a42;
+}
